@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* no permitir escroll en una pagina*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a{
+/*quitar la decoracion */
+  text-decoration: none;
+/*ponerce de forma horizontal */
+  display: inline;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  /* se divide en dos filas */
+  grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-contaner {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: #47cfac ;
+}
+
+header .header-icons-contaner .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+/*   poner los elementos al lado derecho */
+  justify-items: flex-end;
+/*   centrar con el espacio que ocupan */ 
+  align-items: center;
+  /* darle espacio */
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
