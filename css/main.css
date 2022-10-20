@@ -7,15 +7,6 @@ body {
  
 }
 
-.home-body {
-   /* no permitir escroll en una pagina*/
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
-
 a{
 /*quitar la decoracion */
   text-decoration: none;
@@ -30,6 +21,20 @@ header {
   display: grid;
   /* se divide en dos filas */
   grid-template-rows: 1fr 1fr;
+}
+
+.grid-container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.home-body {
+   /* no permitir escroll en una pagina*/
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
 }
 
 header .header-icons-contaner {
@@ -181,7 +186,7 @@ nav .profile-link a {
   margin-bottom: 50px;
 }
 
-.blogs-posts-container .posts-container p {
+.blogs-posts-container .posts-container p { 
   margin-bottom: 35px;
 }
 
